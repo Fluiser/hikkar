@@ -1,4 +1,5 @@
 # hikka_r
+Оно частично работает.
 -  `install`:
 	npm install</br>
 - `TS files`
