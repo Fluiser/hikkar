@@ -1,0 +1,38 @@
+const { MessageEmbed } = require('discord.js');
+const { baka } = process.json.locales.commands;
+const { images } = process.scr.instruction;
+
+module.exports.help = {
+	name: ['baka', 'бака'],
+	usage: {
+		en: 'baka *<@user>',
+		ru: 'бака *<@пользователь>'
+	},
+	description: {
+		en: 'If someone behaves indecently, you can call him a baka.',
+		ru: 'Если кто-то неприлично себя ведет, то можете его обозвать бакой.'
+	},
+	permissions: ['SEND_MESSAGES'],
+	bot_permissions: ['SEND_MESSAGES', 'EMBED_LINKS'],
+	owner: false,
+	tag: 'social'
+};
+
+module.exports.run = async (bot, message, args, language = 'en') => {
+	let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
+	let embed = new MessageEmbed();
+
+	switch (true) {
+		case !member || member.id === message.author.id:
+			embed.setDescription(baka.notArgsUser[language].format(message.author.username));
+			break;
+		case member.id === bot.user.id:
+			return message.channel.send(baka.argsUserIsBot[language].random());
+			break;
+		default:
+			embed.setDescription(baka.baka[language].format(message.author.username, member.user.username));
+			break;
+	}
+
+	await message.channel.send(embed.setImage(await images.sfw.baka()));
+};

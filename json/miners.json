@@ -1,0 +1,93 @@
+{
+  "coal-miner": {
+    "name": {
+      "en": "Coal miner",
+      "ru": "Добытча угля"
+    },
+    "price": 260,
+    "exp": [
+      {
+        "item": "coal",
+        "length": [ 0, 15 ]
+      }
+    ],
+    "description": {
+      "en": "For craft torch.",
+      "ru": "Для крафта факелов."
+    }
+  },
+  "stone-miner": {
+    "name": {
+      "en": "Stone miner",
+      "ru": "Добыча камней"
+    },
+    "price": 80,
+    "exp": [
+      {
+        "item": "stone",
+        "length": [ 1, 5 ]
+      },
+      {
+        "item": "gold-raw",
+        "chance": 0.01,
+        "length": [0.1, 1]
+      }
+    ]
+  },
+  "copper-miner": {
+    "name": {
+      "en": "Raw copper miner",
+      "ru": "Добыча сырья меди"
+    },
+    "price": 420,
+    "exp": [
+      {
+        "item": "copper-raw",
+        "length": [ 1, 3 ]
+      }
+    ]
+  },
+  "iron-miner": {
+    "name": {
+      "en": "Raw iron miner",
+      "ru": "Добыча сырья железа"
+    },
+    "price": 320,
+    "exp": [
+      {
+        "item": "iron-raw",
+        "length": [ 1, 5 ]
+      }
+    ]
+  },
+  "gold-miner": {
+    "name": {
+      "en": "Raw gold miner",
+      "ru": "Добыча сырья золота"
+    },
+    "price": 66666,
+    "exp": [
+      {
+        "item": "gold-raw",
+        "length": [ 0, 2 ]
+      }
+    ],
+    "description": {
+      "en": "just wait.",
+      "ru": "Вы пока не освоили использование золота. Для вас это бесполезный металл.\nПри просьбе построить шахту золота Вам смеются в лицо."
+    }
+  },
+  "aluminium-miner": {
+    "name": {
+      "en": "Factory of aluminium",
+      "ru": "Завод алюминия"
+    },
+    "price": 2048,
+    "exp": [
+      {
+        "item": "aluminium",
+        "length": [ 1, 6 ]
+      }
+    ]
+  }
+}

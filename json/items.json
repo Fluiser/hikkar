@@ -1,0 +1,47 @@
+{
+	"coal": {
+		"name": {
+			"en": "Coal",
+			"ru": "Уголь"
+		},
+		"image": "https://i.imgur.com/xHYv3Ka.jpg",
+		"price": 10,
+		"stackSize": 200
+	},
+	"aluminum": {
+		"name": {
+			"en": "Aluminum",
+			"ru": "Алюминий"
+		},
+		"image": "https://i.imgur.com/m05Hn8i.jpeg",
+		"price": 15,
+		"stackSize": 200
+	},
+	"bronze": {
+		"name": {
+			"en": "Bronze",
+			"ru": "Бронза"
+		},
+		"image": "https://i.imgur.com/zNT65vG.png",
+		"price": 40,
+		"stackSize": 200
+	},
+	"uranium-235": {
+		"name": {
+			"en": "Uranium 235",
+			"ru": "Уран 235"
+		},
+		"image": "https://i.imgur.com/DZVLx6Z.png",
+		"price": 700,
+		"stackSize": 200
+	},
+	"uranium-238": {
+		"name": {
+			"en": "Depleted uranium",
+			"ru": "Обеднённый уран"
+		},
+		"image": "https://i.imgur.com/u1yFDlO.jpg",
+		"price": 30,
+		"stackSize": 200
+	}
+}

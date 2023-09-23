@@ -1,0 +1,547 @@
+{
+  "channelsType": {
+    "ru": {
+      "text": "Текстовый канал",
+      "voice": "Голосовой канал",
+      "category": "Категория",
+      "news": "Новостной канал",
+      "store": "Магазин"
+    },
+    "en": {
+      "text": "Text channel",
+      "voice": "Voice channel",
+      "category": "Category",
+      "news": "News channel",
+      "store": "Store"
+    }
+  },
+  "logs": {
+    "channels": {
+      "channelCreate": {
+        "ru": "Создан канал",
+        "en": "Channel created"
+      },
+      "channelDelete": {
+        "ru": "Удалён канал",
+        "en": "Channel deleted"
+      },
+      "channelUpdate": {
+        "ru": "Обновление канала",
+        "en": "Channel updated"
+      },
+      "desc": {
+        "ru": "Канал: %v\nМодератор: %v\nID: %v\n Тип: %v\n Категория: %v",
+        "en": "Channel: %v\nModerator: %v\nID: %v\n Type: %v\n Category: %v",
+        "__topic": {
+          "en": "**Old topic**: ```\n%v```\n**New**: ```\n%v```",
+          "ru": "**Старый заголовок**: ```\n%v```\n**Новый**: ```\n%v```"
+        }
+      },
+      "notParent": {
+        "ru": "Отсутвствует",
+        "en": "None"
+      }
+    }
+  },
+  "system": {
+    "mention_bot": {
+      "ru": "Да-да?\nДля получения информации, как ~~пробудить~~ использовать меня, используй `%vhelp`",
+      "en": "What?\nIf you want gets information how to use bot just send `%vhelp`"
+    },
+    "msgupd": {
+      "updNew": {
+        "ru": "Новый контент",
+        "en": "New content"
+      },
+      "anew": {
+        "ru": "Добавление файлов",
+        "en": "Adding files"
+      },
+      "adel": {
+        "ru": "Удаление файлов",
+        "en": "Remove files"
+      },
+      "updOld": {
+        "ru": "Старый контент",
+        "en": "Old content"
+      },
+      "msgData": {
+        "en": "Message information",
+        "ru": "Информация о сообщении"
+      }
+    },
+    "moderation": {
+      "ban": {
+        "en": "%v has been banned on %v.\nModerator: %v\nReason: %v",
+        "ru": "%v был забанен на %v\nМодератор: %v\nПричина: %v"
+      },
+      "kick": {
+        "ru": "%v был кикнут.\nМодератор: %v\nПричина: %v",
+        "en": "%v has been kicked.\nModerator: %v\nReason: %v"
+      },
+      "mute": {
+        "en": "%v has been muted on %v.\nModerator: %v\nReason: %v",
+        "ru": "%v был заглушен на %v.\nМодератор: %v\nПричина: %v"
+      }
+    },
+    "argumentIsBot": {
+      "ru": "Но это ведь бот...\nТак нельзя!",
+      "en": "But it's a bot...\nYou can't do this!"
+    },
+    "DiscordError": {
+      "ru": "Произошла ошибка на стороне сервера Discord",
+      "en": "Internal Server Error"
+    },
+    "doBrockenCmd": {
+      "ru": "Спасибо за использование этого бота. Команда, которую вы только-что использовали, выбросила непредвиденную ошибку.\nИнформация для дебага уже отправлена разработчикам!",
+      "en": "Thx for using this bot, but command which was used throw not foreseen error.\nDebug log sended to developers"
+    },
+    "brokenCmd": {
+      "en": "Sorry, but it's command is broken. :c",
+      "ru": "Простите, но эта команда сломана. :c"
+    },
+    "player": {
+      "notStream": {
+        "en": "Bot not played music in voice channel, or voice stream has not be detected.",
+        "ru": "Бот не играет в голосовом канале или аудио поток не был обнаружен."
+      },
+      "skip": {
+        "en": "Skiping...",
+        "ru": "Пропуск..."
+      },
+      "smallerSkip": {
+        "en": "Not need skip voting.\n**%v**/**%v**",
+        "ru": "Недостаточно проголосовало за пропуск.\n**%v**/**%v**"
+      },
+      "invalidVolume": {
+        "en": "Volume must be a range in 1-200",
+        "ru": "Громкость должна быть в радиусе 1-200"
+      },
+      "errorConnect": {
+        "en": "Error connection to voice channel",
+        "ru": "Ошибка подключения к голосовому каналу"
+      }
+    },
+    "playlist": {
+      "limitPlaylists": {
+        "en": "Cannot make more %v playlists.",
+        "ru": "Нельзя сделать больше %v плейлистов."
+      },
+      "charSet": {
+        "min": {
+          "ru": "Нельзя создать плейлист с названием менее чем %v символов.",
+          "en": "Cannot make playlist with name less than %v symbols"
+        },
+        "max": {
+          "ru": "Нельзя создать плейлист с названием более чем %v символов",
+          "en": "Cannot make playlist with name more than %v symbols"
+        }
+      },
+      "notFound": {
+        "en": "Cannot find playlist",
+        "ru": "Не удалось найти плейлист"
+      },
+      "maxCollection": {
+        "en": "Cannot push more 50 song in one playlist",
+        "ru": "Нельзя поместить более 50и песен в один плейлист"
+      },
+      "permissionDenied": {
+        "en": "You don't have permissions for this action",
+        "ru": "Недостаточно прав"
+      },
+      "removeSongs": {
+        "en": "Removed song in playlist %v.\n(%v)",
+        "ru": "Удалены воспроизведения из плейлиста %v.\n(%v)"
+      }
+    }
+  },
+  "templates": {
+    "noArgs": {
+      "ru": "Ты не указал все необходимые аргументы. :c\nпомощь %v",
+      "en": "You do not defined always needed arguments. :c\nhelp %v"
+    },
+    "noUser": {
+      "en": "you didn't provide user.",
+      "ru": "Пользователь не указан."
+    },
+    "missingPermissions": {
+      "ru": "У тебя меньше прав, чем у указанного пользователя.",
+      "en": "The defined user has more permission"
+    },
+    "missingBotPermission": {
+      "ru": "Я не могу совершить данное действие, у меня недостаточно прав.",
+      "en": "It's user not be banned of this bot.\nLack permissions."
+    },
+    "incorrectArgs": {
+      "ru": "Указан некорректный аргумент.\n(Пример: `%v`)",
+      "en": "Define incorrect argument.\n(Expample: `%v`)"
+    }
+  },
+  "commands": {
+    "botinfo": {
+      "ru": "Ядер: %v\nОЗУ: [%v]\nСерверов: %v\nПользователей: %v\nКаналов: %v\nЭмодзи: %v\nUptime: %v\n\nВерсия: `%v`",
+      "en": "Shards: %v\nRAM: [%v]\nGuilds: %v\nUsers: %v\nChannels: %v\nemojis: %v\n Uptime: %v\n\nVersion: `%v`"
+    },
+    "mute": {
+      "missRangeTime": {
+        "ru": "Время должно быть в диапазоне между 1мин и %v дней",
+        "en": "Duration must be in range 1min and %v days"
+      }
+    },
+    "transfer": {
+      "noCrystals": {
+        "en": "Are you don't have %v crystals.",
+        "ru": "У тебя нет %v кристаллов."
+      }
+    },
+    "userinfo": {
+      "userBot": {
+        "self": {
+          "ru": "Твоя горничная",
+          "en": "Nya"
+        },
+        "another": {
+          "ru": "Ты не любишь меня?",
+          "en": "You not love me?"
+        }
+      }
+    },
+    "osu": {
+      "notFoundUser": {
+        "en": "I can't find user (\"%v\")",
+        "ru": "Я не могу найти пользователя (\"%v\")"
+      },
+      "userIsNotDefined": {
+        "en": "Username is not defined.",
+        "ru": "Ник не установлен."
+      },
+      "changeMode": {
+        "en": "Mode changed to `%v`",
+        "ru": "Мод изменён на `%v`"
+      }
+    },
+    "ball": {
+      "en": [
+        "as I see it, yes",
+        "it is certain",
+        "it is decidedly so",
+        "most likely",
+        "outlook good",
+        "signs point to yes",
+        "without a doubt",
+        "yes",
+        "yes – definitely",
+        "reply hazy, try again",
+        "ask again later",
+        "better not tell you now",
+        "cannot predict now",
+        "concentrate and ask again",
+        "don't count on it",
+        "my reply is no",
+        "my sources say no",
+        "outlook not so good",
+        "very doubtful"
+      ],
+      "ru": [
+        "как я вижу, да",
+        "это точно",
+        "это явно так",
+        "скорее всего",
+        "перспективы хорошие",
+        "знаки указывают, что да",
+        "без сомнения",
+        "да",
+        "да, безусловно",
+        "ответ туманен, попробуй еще раз",
+        "повтори попытку позже",
+        "сейчас лучше не рассказывать",
+        "невозможно предсказать сейчас",
+        "сконцентрируйся и спроси еще раз",
+        "не рассчитывай на это",
+        "мой ответ - нет",
+        "мои источники говорят, что нет",
+        "перспектива не так хороша",
+        "очень сомнительно"
+      ]
+    },
+    "playlist": {
+      "notFoundInstruction": {
+        "en": "I can't find instruction",
+        "ru": "Я не могу найти инструкцию"
+      }
+    },
+    "casino": {
+      "invalidRate": {
+        "en": "You defined incorrect  argument.\nRate type must be number, or larger than 0",
+        "ru": "Ты указал некорректный аргумент.\nСтавка должна быть число и быть больше нуля."
+      }
+    },
+    "voit": {
+      "noArgs": {
+        "en": "Question must be defined and length answer must be large 2 and smaller 9",
+        "ru": "Вопрос и ответы должны быть указаны. Кол-во ответов не должно превышать 9и и должно быть больше 2х. Нам ведь не надо создавать опросы с одним вариантом ответа, ведь так?"
+      }
+    },
+    "set": {
+      "guild": {
+        "prefix": {
+          "notValue": {
+            "en": "Prefix is not defined.",
+            "ru": "Префикс не указан."
+          },
+          "badWords": {
+            "en": "Prefix must be large 0 symbols and smaller 17. (1-16)",
+            "ru": "Префикс не может быть короче 0го символа и длинее 17и. (1-16)"
+          }
+        },
+        "ignoreChannels": {
+          "badArgs": {
+            "en": "Can't get function \"%v\" from (%v)",
+            "ru": "Нельзя получить функцию \"%v\" из (%v)"
+          },
+          "badValue": {
+            "en": "Cannot get validate channels",
+            "ru": "Не удалось получить валидные каналы"
+          },
+          "addedChannels": {
+            "en": "The specified channels have been added to the ignored list. \\[%v\\]\\(%v\\)",
+            "ru": "Указанные каналы были добавлены в список игнорируемых. \\[%v\\]\\(%v\\)"
+          },
+          "removedChannels": {
+            "en": "The specified channels have been removed to the ignore list [%v](%v)",
+            "ru": "Указанные каналы были убраны из списка игнорируемых. [%v](%v)"
+          }
+        }
+      }
+    },
+    "play": {
+      "notVoice": {
+        "en": "You are not in voice channel!",
+        "ru": "Вы не находитесь в голосовом канале!"
+      },
+      "already_play": {
+        "en": "Bot already playing in another voice channel.",
+        "ru": "Бот уже играет в другом голосовом канале."
+      },
+      "invalidFormatFile": {
+        "en": "Invalid file extension.",
+        "ru": "Неизвестный формат файла."
+      },
+      "notMatch": {
+        "en": "I did not find anything. :c",
+        "ru": "Я ничего не нашла. :c"
+      },
+      "oversize_file": {
+        "en": "File size must be less than %vMB",
+        "ru": "Размер файла не должен превышать %vМБ"
+      }
+    },
+    "playlist": {
+      "create": {
+        "limit": {
+          "en": "Cannot create more than 5 playlists.",
+          "ru": "Нельзя создать более 5и плейлистов."
+        }
+      }
+    },
+    "slap": {
+      "self_slap": {
+        "en": [
+          "**%v** do slap self",
+          "The **%v** likes BDSM.\n**%v** do slap self in the ass"
+        ],
+        "ru": [
+          "**%v** сделал себе пощёчину.",
+          "**%v** шлёпнул себя.",
+          "**%v** шлёпнул себя по жопке.",
+          "**%v** не хочет себя бить."
+        ]
+      },
+      "argsUserIsBot": {
+        "en": [
+          "Senpai, why you it's doing?!?",
+          "Senpai, you are baka.",
+          "Senpai, you very bad. :c",
+          "Me it hurt. :c"
+        ],
+        "ru": [
+          "Сенпай, зачем ты это делаешь?!?",
+          "Сенпай, ты бака.",
+          "Сенпай, ты очень плохой. :c",
+          "Сенпай, мне больно. :c",
+          "Сенпай, а ты развратник. ❤️"
+        ]
+      },
+      "slap": {
+        "en": [
+          "**%v** slapped **%v**",
+          "**%v** do slap and hit in the ass **%v**"
+        ],
+        "ru": [
+          "**%v** шлёпнул **%v**",
+          "**%v** ударил **%v**",
+          "**%v** шлёпнул по жопе **%v**"
+        ]
+      }
+    },
+    "hug": {
+      "notArgsUser": {
+        "en": "**%v** hugs **%v**",
+        "ru": "**%v** обняла **%v**"
+      },
+      "argsUserIsBot": {
+        "en": [
+          "❤️",
+          "Senpai, you are cute. :3",
+          "Senpai, you are warm ❤️",
+          "^^",
+          "OwO",
+          "UwU"
+        ],
+        "ru": [
+          "❤️",
+          "Сенпай, ты милый. :3",
+          "Сенпай, ты тёплый. ❤️",
+          "^^",
+          "OwO",
+          "UwU",
+          "Хочешь мои трусы?"
+        ]
+      },
+      "hug": {
+        "en": "**%v** hugs **%v**",
+        "ru": "**%v** обнял **%v**"
+      }
+    },
+    "baka": {
+      "notArgsUser": {
+        "en": "**%v** called himself a baka",
+        "ru": "**%v** назвал себя бакой"
+      },
+      "argsUserIsBot": {
+        "en": [
+          ":<",
+          "I am not like this...",
+          "Lie!",
+          "(╯°□°）╯︵ ┻━┻",
+          "You are baka!"
+        ],
+        "ru": [":<", "Я не такая...", "Ложь!", "(╯°□°）╯︵ ┻━┻", "Ты бака!"]
+      },
+      "baka": {
+        "en": "**%v** named baka **%v**",
+        "ru": "**%v** назвал бакой **%v**"
+      }
+    },
+    "smug": {
+      "notArgsUser": {
+        "en": "**%v** smiled maliciously.",
+        "ru": "**%v** ехидно улыбнулся."
+      },
+      "smug": {
+        "en": "**%v** smiled maliciously **%v**",
+        "ru": "**%v** ехидно улыбнулся **%v**"
+      },
+      "argsUserIsBot": {
+        "en": [">:3", "What you doing, senpai?", "You are okey?"],
+        "ru": [">:3", "Что ты делаешь, сенпай?", "Ты в порядке?"]
+      }
+    },
+    "tickle": {
+      "notArgsUser": {
+        "en": "**%v** decided to tickle yourself. OwO",
+        "ru": "**%v** решил пощекотать себя. OwO"
+      },
+      "argsUserIsBot": {
+        "en": ["Senpai, I hesitate!!!", "What you doing, senpai?!?"],
+        "ru": ["Сенпай, я стесняюсь этого!!!", "Что ты делаешь, сенпай?!?"]
+      },
+      "tickle": {
+        "en": "**%v** tickled **%v**",
+        "ru": "**%v** решил пощекотать **%v**"
+      }
+    },
+    "pat": {
+      "notArgsUser": {
+        "en": "**%v** pat **%v**",
+        "ru": "**%v** решила погладить **%v**"
+      },
+      "argsUserIsBot": {
+        "en": ["❤️", "OwO", ">:3"],
+        "ru": ["❤️", "OwO", ">:3"]
+      },
+      "pat": {
+        "en": "**%v** pat **%v**",
+        "ru": "**%v** погладил **%v**"
+      }
+    },
+    "poke": {
+      "notArgsUser": {
+        "en": "Why you doing, pervert?",
+        "ru": "Что ты делаешь, извращенец?"
+      },
+      "poke": {
+        "en": [
+          "**%v** poked in **%v**",
+          "**%v** poked in ass **%v**",
+          "**%v** poked in cheek **%v**"
+        ],
+        "ru": [
+          "**%v** ткнул в **%v**",
+          "**%v** ткнул в жёпку **%v**",
+          "**%v** ткнул в щеку **%v**"
+        ]
+      },
+      "argsUserIsBot": {
+        "en": [
+          "YAA!!!",
+          "Why you poked in my cheek? :<",
+          "I scared!",
+          "Why you is doing? :c",
+          "Baka!"
+        ],
+        "ru": [
+          "ВААА!!!",
+          "Зачем ты тыкаешь мне в лицо? :c",
+          "Не пугай меня!",
+          "Зачем ты это делаешь? :c",
+          "Дурак!"
+        ]
+      }
+    },
+    "kiss": {
+      "notArgsUser": {
+        "en": "**%v** pated **%v**",
+        "ru": "**%v** погладила **%v**"
+      },
+      "argsUserIsBot": {
+        "en": ["Senpai...", ":3", "❤️", "I hesitate... :c"],
+        "ru": [
+          "Сенпай...",
+          ":3",
+          "❤️",
+          "Я стесняюсь... :c",
+          "Из меня что-то течёт.. UwU"
+        ]
+      },
+      "kiss": {
+        "en": "**%v** kissed **%v**",
+        "ru": "**%v** поцеловал **%v**"
+      }
+    },
+    "penis": {
+      "argsUserIsBot": {
+        "en": "Dude, what the fuck?",
+        "ru": "Чувак, у меня его нету. :c"
+      },
+      "memberDefined": {
+        "en": "Why you want see him penis?",
+        "ru": "Почему ты хочешь увидеть его член?"
+      },
+      "penis": {
+        "en": "Your penis: **8%vD** (%v cm.)",
+        "ru": "Твой писюн: **8%vD** (%v см.)"
+      }
+    }
+  }
+}

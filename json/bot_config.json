@@ -1,0 +1,17 @@
+{
+	"TOKEN": "string",
+	"fluxpointTOKEN": "string",
+	"owner": ["333999936821526528"],
+	"prefix" : "?",
+	"database": {
+		"host": "",
+		"user": "root",
+		"password": "",
+		"database": "hikka_r"
+	},
+	"osu": "token",
+	"DiscordBots": "token",
+	"googleKey": "string",
+	"service_token": "token for communation with site",
+	"service_host": "localhost"
+}

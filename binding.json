@@ -1,0 +1,14 @@
+[
+  {
+    "path": "addon/sleep.cpp",
+    "name": "sleep"
+  },
+  {
+    "path": "addon/parse.cpp",
+    "name": "parse"
+  },
+  {
+  	"path": "addon/proto.cpp",
+  	"name": "proto"
+  }
+]

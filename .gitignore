@@ -1,0 +1,15 @@
+/node_modules
+/dist
+/logs
+
+.idea
+.vs
+.vscode
+.log*
+
+#metainfo
+package-lock.json
+*.lock
+test.*
+CMakeLists.txt
+site

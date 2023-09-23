@@ -1,0 +1,14 @@
+{
+	"debug": {
+		"id": "id",
+		"token": "string"
+	}, 
+	"main": {
+		"id": "id",
+		"token": "string"
+	},
+	"cw": {
+		"id": "id",
+		"token": "string"
+	}
+}
